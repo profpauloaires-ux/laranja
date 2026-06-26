@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas PDV - Ponto de Venda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>&#9733; Sistemas PDV - Ponto de Venda &#9733;</h2>
+        <form id="cadastroForm">
+            <input type="hidden" id="indexEdicao" value="">
+            <div class="input-group">
+                <label>produto:</label>
+                <input type="text" id="produto" required>
+            </div>
+            <div class="input-group">
+                <label>valor:</label>
+                <input type="text" id="valor" required>
+            </div>
+            <div class="input-group">
+                <label>quantidade:</label>
+                <input type="tel" id="quantidade" required>
+            </div>
+             <div class="input-group">
+                <label>Marca:</label>
+                <input type="marca" id="marca" required>
+            </div>
+            <button type="submit" id="btnSalvar">Registrar</button>
+            <button type="button" id="btnCancelar" style="display:none; background:#6c757d; margin-top:5px;">Cancelar Edição</button>
+        </form>
+
+        <hr>
+
+        <h3>Lista de Contatos</h3>
+        <div class="table-container">
+            <table id="tabelaDados">
+                <thead>
+                    <tr>
+                        <th>produto</th>
+                        <th>valor</th>
+                        <th>quantidade</th>
+                        <th>marca</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <p align="center">&copy;Prof.: Paulo Aires - Engenheiro de Software </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
